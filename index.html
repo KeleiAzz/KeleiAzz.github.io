@@ -105,11 +105,11 @@
                 <!-- <div class="col-lg-4">
                     <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
                 </div> -->
-                <!-- <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Theme
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="doc/resume.pdf" class="btn btn-lg btn-outline">
+                        <i class="fa fa-download"></i> Download CV in PDF
                     </a>
-                </div> -->
+                </div>
             </div>
         </div>
     </section>
@@ -306,6 +306,16 @@
                             </a>
                         </li>
                         <li>
+                            <a href="https://github.com/keleiazz" target="_blank" class="btn-social btn-outline" title="GitHub">
+                                <i class="fa fa-fw fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/kelei-gong-96bb99a4" target="_blank" class="btn-social btn-outline" title="Linkedin">
+                                <i class="fa fa-fw fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
                             <a href="https://www.facebook.com/keleigong" target="_blank" class="btn-social btn-outline" title="Facebook">
                                 <i class="fa fa-fw fa-facebook"></i>
                             </a>
@@ -315,16 +325,8 @@
                                 <i class="fa fa-fw fa-google-plus"></i>
                             </a>
                         </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/kelei-gong-96bb99a4" target="_blank" class="btn-social btn-outline" title="Linkedin">
-                                <i class="fa fa-fw fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/keleiazz" target="_blank" class="btn-social btn-outline" title="GitHub">
-                                <i class="fa fa-fw fa-github"></i>
-                            </a>
-                        </li>
+                        
+                        
                     </ul>
                 </div>
             </div>
@@ -401,7 +403,7 @@
                         <div class="modal-body">
                             <h2>Supply Chain Management Auto-Rating</h2>
                             <hr class="star-primary">
-                            <!-- <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt=""> -->
+                            <img src="img/portfolio/auto-rating.png" class="img-responsive img-centered" alt="">
                             <div class="modal-description">
                             <ul>
                                 <li>Designed a whole Data Mining process involving crawling data from Internet, cleaning/processing data, storing data and applying Machine Learning algorithms to data to generate required results.
@@ -452,7 +454,7 @@
                         <div class="modal-body">
                             <h2>Operating System Design</h2>
                             <hr class="star-primary">
-                            <!-- <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt=""> -->
+                            <img src="img/portfolio/xinu.png" class="img-responsive img-centered" alt="">
                                 <div class="modal-description">
                                 <ul>
                                 <li>Extended an OS called Xinu, worked on its source code directly. Including implementing a Linux-like scheduling policy based on process priority, and a Multiqueue scheduling policy.
@@ -497,21 +499,35 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Continuous Integration/Delivery Pipeline</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <img src="img/portfolio/pipeline.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/structure.png" class="img-responsive img-centered" alt="">
+                            <div class="modal-description">
+                                <ul>
+                                    <li>Integrated a set of Git Hooks, shell scripts, Redis, Docker and CI tools(Jenkins) to create a pipeline to build, test, analysis and deploy newly committed code.
+                                    </li>
+                                    <li>Started from a pre-commit hook, perform a series of test and analysis to avoid commit on broken code. Commit will be rejected once certain errors/warnings are detected.</li>
+
+                                    <li>Upon a successful commit, use a post-commit to send notification to Jenkins to build and test the code, then deploy the new code to servers if nothing goes wrong. Used Ansible and Docker for the production environment configuration.
+                                    </li>
+                                    <li>Implemented a Canary release strategy for deploying new version, routing most traffics to the stable version and the rest to the new version. Once the new version works well, routing more traffic to it.
+                                    </li>
+                                    <li>Created a load balancer and monitoring app to ensure all the servers have similar workload.
+                                    </li>
+                                </ul>
+                            </div>
                             <ul class="list-inline item-details">
-                                <li>Client:
+                                <!-- <li>Client:
                                     <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
                                     </strong>
                                 </li>
                                 <li>Date:
                                     <strong><a href="http://startbootstrap.com">April 2014</a>
                                     </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                </li> -->
+                                <li>Code:
+                                    <strong><a href="https://github.com/DevOpsGHZ">Project page</a>
                                     </strong>
                                 </li>
                             </ul>
